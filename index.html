@@ -1,1 +1,53 @@
-index.html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light|Work+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="container">
+		<h1>To Do List</h1>
+		<div id="counterDiv">
+			<div class="counter">
+				Completed
+				<p class="numbers" id="complete">
+				0
+				</p>
+			</div>
+			<div class="counter">
+				All
+				<p class="numbers" id="allTasks">
+				0
+				</p>
+			</div>
+			<div class="counter">
+				Open
+				<p class="numbers" id="openTasks">
+				0
+				</p>
+			</div>
+		</div>
+    	<p>Click above to sort or drag to reorder</p> 
+    	<p>Double click to to delete an item</p>
+		<form name="toDoList">
+			<input type="text" placeholder="Task description..." name="ListItem"/>
+		</form>
+		<div id="button">Add</div>
+		<br/>
+		<ol></ol>
+      
+      
+    
+    </div>
+		<!-- load local copy of jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- for the reorder function -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/myscript.js"></script>
+	</body>
+
+</html>
