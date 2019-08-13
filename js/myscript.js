@@ -25,20 +25,29 @@ $(document).ready(function(){
 
 
 
+       $("input[name=ListItem]").keypress(function(event){
+          if(event.keyCode == 13){
+            event.preventDefault();
+            $("#button").click();
+          }         
+      });
+
+
 // remove tasks by doubleclick --- and counting tasks 
 
       $(document).on('dblclick','li', function(){
         $(this).toggleClass('strike').animate({
                         opacity: 0.0,
                         paddingLeft: '+=80'
-                    }, 500, function() {
+                    },500 ,function() {
                         $(this).remove();
-                    });
         var numComplete = $('.checkboxChecked').length;
         var numAll = $("li").length;
         $("#complete").text(numComplete);
         $("#openTasks").text(numAll - numComplete);
         $('#allTasks').text(numAll);
+                    });
+        
       });
       
 
