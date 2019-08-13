@@ -29,6 +29,7 @@ $(document).ready(function(){
           if(event.keyCode == 13){
             event.preventDefault();
             $("#button").click();
+            $('input[name=ListItem]').val("")
           }         
       });
 
